@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Servey Form</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<form action="Thankyou.html" method="get" name="Form" onsubmit="return validateForm()" >
+    <h2>Validate Servey Form</h2>
+    <div class="box">
+        <label>Full Name</label>
+        <input type="text" name="name" id="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="box">
+        <label>Email Address</label>
+        <input type="text" name="email" id="email">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="box">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" maxlength="10" id="mobile">
+        <div class="error" id="mobileErr"></div>
+    </div>
+
+    <div class="box">
+        <label>Institute Name</label>
+        <input type="text" name="institute" id="institute">
+        <div class="error" id="instituteErr"></div>
+    </div><hr>
+
+    <div class="box">
+        <label>Year</label>
+        <select name="year" id="year">
+            <option>Select</option>
+            <option>1st Year(Gulu Gulu Time)</option>
+            <option>2nd Year(thoda sa a bit serious)</option>
+            <option>3rd Year(Placement ki tension)</option>
+            <option>4th Year(nikalne ka dukh college se)</option>
+        </select>
+        <div class="error" id="yearErr"></div><hr>
+    
+    <div class="box">
+        <label>Country</label>
+        <select name="country" id="country">
+            <option>Select</option>
+            <option>London</option>
+            <option>India</option>
+            <option>America</option>
+            <option>Vietnam</option>
+            <option>Germany</option>
+        </select> 
+        <div class="error" id="countryErr"></div>
+    </div>
+
+    <div class="box">
+        <label>Gender</label>
+        <div class="form-inline" id="gender">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female">Female</label>
+            <label><input type="radio" name="gender" value="Trans">Trans</label> 
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+          
+    <div class="box">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+
+</body>
+</html>
